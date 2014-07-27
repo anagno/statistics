@@ -460,7 +460,6 @@ H_0 : \mu_A = \mu_0, H_1: \mu_A \neq \mu_0
 \end{itemize}
 }
 
-
 Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $Η_0:$ η θεματολογία της ιστοσελίδας είναι ανεξάρτητη από τον παράγοντα \en{Country} και $H_1$ η θεματολογία της ιστοσελίδας εξαρτάται από τον παράγοντα \en{Country}.
 
 Για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Descriptive Statistics | Crosstabs} (βλ. σχήμα \ref{fig:crosstabs}) και προκύπτει ο πίνακας \ref{table:crosstabs_crosstabulation} και \ref{table:crosstabs_chi}. 
@@ -500,9 +499,52 @@ H_0 : \mu_A = \mu_0, H_1: \mu_A \neq \mu_0
 \begin{Assignment}[Μέρος Γ]
 \AssignmentTitle{ % 
 \begin{itemize}
-  \item Να εξετασθεί αν η μεταβλητή \en{views} ($Y$) εξαρτάται γραμμικά από τις μεταβλητές, \en{country, subject, news, journalist, yr}. Να βρεθεί το βέλτιστο γραμμικό μοντέλο (σε επίπεδο σημαντικότητας 1\%) και να δοθεί η γραμμική εξίσωση που αντιστοιχεί σε αυτό.
+  \item Να εξετασθεί αν η μεταβλητή \en{views} ($Y$) εξαρτάται γραμμικά από τις μεταβλητές \en{country, subject, news, journalist, yr}. Να βρεθεί το βέλτιστο γραμμικό μοντέλο (σε επίπεδο σημαντικότητας 1\%) και να δοθεί η γραμμική εξίσωση που αντιστοιχεί σε αυτό.
 \end{itemize}
 }
+
+Ο έλεγχος για την ύπαρξη γραμμικής σχέσης ανάμεσα στις μεταβλητές ισοδυναμεί με τον ακόλουθο στατιστικό έλεγχο
+
+\begin{equation}
+H_0:\beta = 0, H_1: \beta \neq 0
+\end{equation}
+
+Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $H_0:$ η μεταβλητή είναι γραμμικά ανεξάρτητη από τον παράγοντα και $H_1$ η μεταβλητή είναι γραμμικά εξαρτημένη από την μεταβλητή \en{views}.
+
+Για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Regression | Linear} (βλ. σχήμα \ref{fig:regression_linear}) και προκύπτει ο πίνακας \ref{table:regression_linear}. 
+
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_regression_linear.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/regression_linear.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze | Regression | Linear του SPSS}
+\label{fig:regression_linear}
+\end{figure}
+
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_regression_linear.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Regression | Linear του SPSS.}
+\label{table:regression_linear}
+\end{table}
+
+Η απόρριψη ή αποδοχή της μηδενικής υπόθεσης θα βασιστεί στο \en{p-value} του πίνακα \ref{table:regression_linear}. Αν το $p-value<0.01$ τότε αποδεχόμαστε την $H_1$, δηλαδή ότι ο παράγοντας είναι σημαντικός.
+Αν το $p-value>0.01$ τότε αποδεχόμαστε την $H_0$. Συνεπώς (σε επίπεδο σημαντικότητας 1\%) οι σημαντικοί παράγοντες είναι οι \en{subject, news}.
+
+Επομένως κρατώντας μόνο τους σημαντικούς παράγοντες προκύπτει ο πίνακας \ref{table:regression_linear_2}. Οι συντελεστές της γραμμικής εξίσωσης δίνονται στην στήλη B του πίνακα. Άρα η εξίσωση είναι η $Y_{views} = 11739.834 + X_{subject} \cdot 4411.963 + X_{news} \cdot 415.654 $ 
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_regression_linear_2.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Regression | Linear του SPSS (2).}
+\label{table:regression_linear_2}
+\end{table}
+
 
 \AssignmentTitle{ % 
 \begin{itemize}
@@ -510,11 +552,21 @@ H_0 : \mu_A = \mu_0, H_1: \mu_A \neq \mu_0
 \end{itemize}
 }
 
+O πίνακας \ref{table:regression_linear} δείχνει το πλήρες μοντέλο. Οι συντελεστές της γραμμικής εξίσωσης δίνονται στην στήλη B του πίνακα. Άρα η εξίσωση είναι η $Y_{views} = 11819.566 + X_{country} \cdot 457.290 + X_{subject} \cdot 4421.575 + X_{news} \cdot 416.238 + X_{journalist} \cdot 3.461 + X_{yr} \cdot (-426.137) $ 
+
+Οι συντελεστές δείχνουν κάθε επιπλέον μονάδα του συντελεστή πόσο επηρεάζει το κέρδος μας. Επομένως π.χ. κάθε επιπλέον δημοσιογράφος προσθέτει $3.461$  στον ετήσιο αριθμό επισκέψεων της συγκεκριμένης σελίδας κ.λ.π. . 
+
+
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Χρησιμοποιώντας το πλήρες μοντέλο, να εκτιμηθεί σημειακά και με διάστημα εμπιστοσύνης 99\% ο αναμενόμενος επιπρόσθετος ετήσιος αριθμός επισκέψεων, που θα παρουσιάσει μία ελληνική ιστοσελίδα, έναντι μίας όχι ελληνικής με τα ίδια χαρακτηριστικά.
 \end{itemize}
 }
+
+
+Ανάμεσα σε μία ελληνική σελίδα και ξένη ιστοσελίδα η διαφορά ανάμεσα στην επισκεψιμότητα τους είναι ο συντελεστής \en{country} της γραμμικής εξίσωσης (δηλαδή $457.290$) υπό την προϋπόθεση ότι οι ιστοσελίδες αυτές παρουσιάζουν τα ίδια χαρακτηριστικά ως προς τις υπόλοιπες μεταβλητές.
+
+Το διάστημα εμπιστοσύνης δίνεται πάλι από τον πίνακα \ref{table:regression_linear} στην τελευταία στήλη όπου ο συντελεστής \en{country} μπορεί να κυμαίνεται μεταξύ των τιμών $-2196.741$ και $3111,321$. Από αυτό το μεγάλο εύρος που έχει ο συντελεστής καταλαβαίνουμε ότι δεν είναι σημαντικός παράγοντας της εξίσωσης (πράγμα που φαίνεται και από το $p-value$).
 
 \end{Assignment}
 
