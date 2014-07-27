@@ -5,7 +5,6 @@
 \usepackage{pdflscape}
 \usepackage{subcaption}
 
-
 \university{Πανεπιστήμιο Πειραιώς}{Πα.Πει.}
 \school{Τμήμα Πληροφορικής}{Π.Μ.Σ. "Πληροφορική"}
 \department{Πρόγραμμα Μεταπτυχιακών Σπουδών «Πληροφορική»}{}
@@ -46,7 +45,7 @@
 
 Τα δεδομένα στο αρχείο \en{views.sav} αποτελούν τυχαίο δείγμα 52 σελίδων και περιέχουν τις ακόλουθες μεταβλητές:
 
-\begin{table}[h]
+\begin{table}[htbp]
 \begin{center}
   \begin{tabular}{|m{0.30\textwidth}|m{0.50\textwidth}|}
     \hline
@@ -89,9 +88,9 @@
 \sigma=\sqrt{\frac1{n-1}\sum_{i=1}^n(t_i-\bar{x})^2}
 \end{equation}
 
-Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze/Descriptive Statistics/Descriptives} (βλ. σχήμα \ref{fig:mean}) και προκύπτει ο πίνακας \ref{table:mean}.
+Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze|Descriptive Statistics|Descriptives} (βλ. σχήμα \ref{fig:mean}) και προκύπτει ο πίνακας \ref{table:mean}.
 
-\begin{table}[h]
+\begin{table}[htbp]
 \begin{center}
   \begin{tabular}{|c|c|c|c|}
     \hline
@@ -104,21 +103,21 @@
 \end{center}
 \end{table}
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \begin{subfigure}[b]{0.4\textwidth}
-     \includegraphics[width=\textwidth,height=0.15\textheight]{images/menu_mean.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_mean.png}
      %\caption{A gull}
      %\label{fig:gull}
   \end{subfigure}%
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
           %(or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=0.15\textheight]{images/mean.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/mean.png}
     %\caption{A tiger}
     %\label{fig:tiger}
   \end{subfigure}
-  \caption{Το μενού Analyze/Descriptive Statistics/Descriptives του SPSS}
+  \caption{Το μενού Analyze|Descriptive Statistics|Descriptives του SPSS}
 \label{fig:mean}
 \end{figure}
 
@@ -132,16 +131,16 @@
 
 }
 
-Διάμεσος ενός συνόλου ν παρατηρήσεων είναι η αριθμητική τιμή που διαχωρίζει το υψηλότερο ήμισυ ενός δείγματος δεδομένων, έναν πληθυσμό ή μία κατανομή πιθανοτήτων από το κάτω μισό \cite{wiki:median}.
+Διάμεσος ενός συνόλου ν παρατηρήσεων είναι η αριθμητική τιμή που διαχωρίζει το υψηλότερο ήμισυ ενός δείγματος δεδομένων, έναν πληθυσμό ή μία κατανομή πιθανοτήτων από το κάτω μισό, όταν αυτές έχουν διαταχθεί σε αύξουσα σειρά \cite{wiki:median}.
 
 Τεταρτημόριο είναι ένα μέτρο που χρησιμοποιείται στην στατιστική και υποδηλώνει την τιμή κάτω από την οποία ένα δεδομένο ποσοστό παρατηρήσεων βρίσκονται κάτω από αυτή την τιμή \cite{wiki:percentile}.
 
 Κορυφή είναι η τιμή που εμφανίζεται πιο συχνά σε ένα σύνολο δεδομένων \cite{wiki:mode}.
 
-Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze/Descriptive Statistics/Frequencies} (βλ. σχήμα \ref{fig:frequencies}) και προκύπτει ο πίνακας \ref{table:frequencies}.
+Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze|Descriptive Statistics|Frequencies} (βλ. σχήμα \ref{fig:frequencies}) και προκύπτει ο πίνακας \ref{table:frequencies}.
 
 
-\begin{table}[h]
+\begin{table}[htbp]
 \begin{center}
   \begin{tabular}{|c c|c|}
     \hline
@@ -161,16 +160,16 @@
 
 Παρατηρούμε ότι η διάμεσος (\en{median}) είναι ίση με $23713$, που σημαίνει ότι οι 25 ιστοσελίδες έχουν μέχρι $23713$ επισκέψεις ενώ οι υπόλοιπες παραπάνω. Η κορυφή των παρατηρήσεων είναι $28200$, που σημαίνει ότι είναι η πιο συχνά εμφανιζόμενη τιμή. Τέλος το πρώτο τεταρτημόριο είναι ίσο με $18075$ (που σημαίνει ότι το 1/4 των ιστοσελίδων έχουν επισκέψεις μέχρι $18075$) και ομοίως και για τα υπόλοιπα. Το ποσοστημόριο 40\% ισούται με $21479.80$ που ομοίως σημαίνει ότι το 30\% των σελίδων έχουν επισκέψεις μέχρι και $21479.80$ .
 
-\begin{figure}
+\begin{figure}[htbp]
   \centering
-  \begin{subfigure}[b]{0.4\textwidth}
-     \includegraphics[width=\textwidth,height=0.15\textheight]{images/menu_frequencies.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_frequencies.png}
   \end{subfigure}%
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
-  \begin{subfigure}[b]{0.4\textwidth}
-    \includegraphics[width=\textwidth,height=0.15\textheight]{images/frequencies.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/frequencies.png}
   \end{subfigure}
-  \caption{Το μενού Analyze/Descriptive Statistics/Frequencies του SPSS}
+  \caption{Το μενού Analyze|Descriptive Statistics|Frequencies του SPSS}
 \label{fig:frequencies}
 \end{figure}
 
@@ -192,9 +191,25 @@
 
 }
 
-Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze/Descriptive Statistics/Frequencies} και προκύπτει ο πίνακας \ref{table:frequencies:Views_2}.
+Για τον ορισμό της νέας μεταβλητής στο SPSS πηγαίνουμε στο μενού: \en{Transform | Recode Into different Variables...} (βλ. σχήμα \ref{fig:Views_2}).
 
-\begin{table}[h]
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_views_2.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/views_2.png}
+  \end{subfigure}
+  \caption{Το μενού Transform | Recode Into different Variables... του SPSS}
+\label{fig:Views_2}
+\end{figure}
+
+Μετά ομοίως με το προηγούμενο ερώτημα υπολογίζουμε τον πίνακα συχνοτήτων.
+Για τον υπολογισμό τους στο SPSS πηγαίνουμε στο μενού: \en{Analyze|Descriptive Statistics|Frequencies} και προκύπτει ο πίνακας \ref{table:frequencies:Views_2}.
+
+\begin{table}[htbp]
 \begin{center}
   \begin{tabular}{|c c|c|c|c|c|c|}
     \hline
@@ -210,14 +225,27 @@
 \end{center}
 \end{table}
 
-\begin{figure}
+Επομένως για την δημιουργία του κυκλικού διαγράμματος πηγαίνουμε στο μενού: \en{Graphs|Legacy Dialogs|Pie} (βλ. σχήμα \ref{fig:menu:views_2:pie}) και προκύπτει το σχήμα \ref{fig:views_2:pie}.
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox*{8.5cm}{!}{
+    \includegraphics{images/menu_views_2_pie.png}
+  }
+  \caption{ΤΤο μενού  \en{Graphs|Legacy Dialogs|Pie} του SPSS.}
+\label{fig:menu:views_2:pie}
+\end{figure}
+
+\begin{figure}[htbp]
   \centering
   \resizebox*{16.5cm}{!}{
     \includegraphics{images/views_2_pie.png}
   }
-  \caption{Το μενού Analyze/Descriptive Statistics/Frequencies του SPSS}
-\label{fig:frequencies}
+  \caption{Το κυκλικό διάγραμμα που προκύπτει από την μεταβλητή \en{Views\_2}.}
+\label{fig:views_2:pie}
 \end{figure}
+
+Επομένως το ποσοστό που ανήκει στην 3η ομάδα είναι $7.84$\% .
 
 
 \AssignmentTitle{% 
@@ -226,30 +254,62 @@
 \end{itemize}
 }
 
-\begin{table}[h]
+Τα μέτρα διασποράς δίνουν πληροφορίες για την μεταβλητότητα, δηλαδή το "άπλωμα" των παρατηρήσεων σε ένα σύνολο δεδομένων. Με αυτά δίνεται η δυνατότητα να εξαχθούν άμεσα συμπεράσματα σχετικά με την συμπεριφορά των υποκείμενων τιμών. \cite{biostatistic}
+
+Μερικά από τα βασικότερα μέτρα διασποράς ή μεταβλητότητας είναι:
+
+\begin{description}
+\item [Εύρος (αγγλ. \en{Range}):] Το εύρος $R$ ενός δείγματος ορίζεται ως η διαφορά μεταξύ της μεγαλύτερης και της μικρότερης τιμής αυτού. Δηλαδή:
+
+\begin{equation}
+R= t_max - t_min
+\end{equation}
+
+\item [Τυπική απόκλιση:] Έχει ορισθεί πιο πάνω.
+
+\end{description}
+
+Για τον υπολογισμό των μέσων τιμών και του εύρους για τις 4 ομάδες στο SPSS πηγαίνουμε στο μενού: Analyze|Compare Means|Means (βλ. σχήμα \ref{fig:variability:views_2}) και προκύπτει ο πίνακας \ref{table:variability:views_2}.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_mean_view_2.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/mean_view_2.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze|Compare Means|Means του SPSS}
+\label{fig:variability:views_2}
+\end{figure}
+
+
+\begin{table}[htbp]
 \begin{center}
-  \begin{tabular}{|c c|c|}
+  \begin{tabular}{|c|c|c|c|c|}
     \hline
-    N                & \en{Valid}   & 51       \\ \hline
-                     & \en{Missing} & 0        \\ \hline
-    \en{Median}      &              & 2.000    \\ \hline 
-    \en{Mode}        &              & 1.00     \\ \hline
-    \en{std. Deviation}&            & 1.02785  \\ \hline
-    \en{Variance}    &              & 1.056    \\ \hline
-    \en{Range}       &              & 3.000    \\ \hline
-    \en{Percentiles} & 25           & 1.00     \\ \hline
-    \en{Percentiles} & 50           & 2.00     \\ \hline
-    \en{Percentiles} & 75           & 3.00     \\ \hline
+    \en{Views\_2} & \en{Mean} & \en{Range} & \en{N} & \en{Std. Deviation} \\ \hline
+    1,00        &  18056.52  & 6600 &  21  &  2046.452 \\ \hline  
+    2,00        &  24887.84  & 5509 &  19  &  1440.729 \\ \hline  
+    3,00        &  28564.50  & 1142 &  4   &  539.314  \\ \hline  
+    4,00        &  33687.71  & 3931 &  7   &  2580.070 \\ \hline  
+    \en{Total}  &  23571.14  & 23045 &  51  &  5743.964 \\ \hline  
+
   \end{tabular}
 
-\caption{Η διάμεσος, τα τεταρτημόρια, το ποσοστημόριο και η κορυφή των ετήσιων αριθμών επισκέψεων των ιστοσελίδων.}
-\label{table:frequencies:views_2}
+\caption{Οι μεταβλητότητες που παρουσιάζουν οι 4 ομάδες ιστοσελίδων.}
+\label{table:variability:views_2}
 \end{center}
 \end{table}
 
-%http://en.wikipedia.org/wiki/Statistical_variability
+
+Όπως παρατηρούμε η ομάδες δεν είναι τόσο ομοιογενές μιας και το εύρος τιμών τους είναι αρκετά διαφορετικό και ο αριθμός των παρατηρήσεων που περιλαμβάνονται στις 4 ομάδες είναι διαφορετικός. Τέλος οι τυπικές τους αποκλίσεις διαφέρουν αρκετές μεταξύ τους, επομένως ούτε μέσα στην κάθε ομάδα οι τιμές είναι ομοιογενές και αυτές απλώνονται αρκετά μέσα στην κάθε ομάδα.
+
 
 \end{Assignment}
+
+\clearpage
 
 \begin{Assignment}[Μέρος Β]
 \AssignmentTitle{ % 
@@ -258,17 +318,141 @@
 \end{itemize}
 }
 
+Οι δύο υποθέσεις που έρχονται σε αντίθεση σύμφωνα με την εκφώνηση είναι οι ακόλουθες:
+
+\begin{equation}
+H_0 : \mu_g = \mu_f, H_1: \mu_g \neq \mu_f
+\end{equation}
+
+όπου $ \mu_g, \mu_f $ είναι οι η επισκεψιμότητα των ελληνικών και ξένων ιστοσελίδων αντίστοιχα.
+
+Προκειμένου να εφαρμόσουμε παραμετρικό έλεγχο για την σύγκριση της επισκεψιμότητας των ιστοσελίδων θα πρέπει πρώτα να εξετάσουμε αν τα δεδομένα που διαθέτουμε προσαρμόζονται ικανοποιητικά στην κανονική κατανομή. 
+
+Για τον έλεγχο στο SPSS πηγαίνουμε στο μενού: \en{Analyze|NonParametric test|1 Sample K-S} (βλ. σχήμα \ref{fig:sample_k_s}) και λαμβάνουμε τον πίνακα \ref{table:sample_k_s}. 
+
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_sample_k_s.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/sample_k_s.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze|NonParametric test|1 Sample K-S του SPSS}
+\label{fig:sample_k_s}
+\end{figure}
+
+
+\begin{table}[htbp]
+\begin{center}
+  \begin{tabular}{|c c|c|}
+    \hline
+    & & \en{views} \\ \hline
+    \en{N} & & 51 \\ \hline
+    Normal Parameters &	Mean &	23571,14 \\ \hline
+	& Std. Deviation &	5743,964 \\ \hline
+    Most Extreme Differences	& Absolute &	,095 \\ \hline
+	& Positive	& ,095 \\ \hline
+	& Negative	& -,068 \\ \hline
+Test Statistic		& & ,095\\ \hline
+Asymp. Sig. (2-tailed)	& &	,200\\ \hline
+
+  \end{tabular}
+
+\caption{Οι μεταβλητότητες που παρουσιάζουν οι 4 ομάδες ιστοσελίδων.}
+\label{table:sample_k_s}
+\end{center}
+\end{table}
+
+	
+Η τιμή \en{p-value (Asymp. Sigm.(2-tailed))} για τον έλεγχο της κανονικότητας των δεδομένων είναι ίση με $0.200 > 0.05$. Συνεπώς αποδεχόμαστε τη μηδενική υπόθεση της καλής προσαρμογής των δεδομένων στην κανονική κατανομή.
+
+Στη συνέχεια, για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Compare means | Independent samples T-test} (βλ. σχήμα \ref{fig:sample_T_Test}) και προκύπτει ο πίνακας \ref{table:sample_T_Test}. 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_independent_Samples_T_Test.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/independent_Samples_T_Test.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze | Compare means | Independent samples T-test του SPSS}
+\label{fig:sample_T_Test}
+\end{figure}
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_independent_Sample_T_Test.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Compare means | Independent samples T-test του SPSS}
+\label{table:sample_T_Test}
+\end{table}
+
+Από τον πίνακα \ref{table:sample_T_Test} παρατηρούμε ότι $p-value = 0.901 > 0.05$, συνεπώς (σε επίπεδο σημαντικότητας 5\%) δεχόμαστε την μηδενική υπόθεση, που σημαίνει ότι οι ελληνικές ιστοσελίδες έχουν την ίδια μέση ετήσια επισκεψιμότητα με τις ξένες ιστοσελίδες.
+
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Να εξετασθεί σε επίπεδο σημαντικότητας 5\% αν οι ιστοσελίδες που λειτουργούν τουλάχιστον 2 έτη, έχουν τον ίδιο μέσο ετήσιο αριθμό επισκέψεων με ιστοσελίδες που λειτουργούν λιγότερο από 2 έτη.
 \end{itemize}
 }
 
+Οι δύο υποθέσεις που έρχονται σε αντίθεση σύμφωνα με την εκφώνηση είναι οι ακόλουθες:
+
+\begin{equation}
+H_0 : \mu_{<2} = \mu_{>2}, H_1: \mu_{<2} \neq \mu_{>2}
+\end{equation}
+
+όπου $ \mu_{<2}, \mu_{>2} $ είναι οι η επισκεψιμότητα των σελίδων που λειτουργούν τουλάχιστον 2 έτη και οι σελίδες που λειτουργούν λιγότερο από 2 έτη αντίστοιχα. Από το προηγούμενο ερωτήμα γνωρίζουμε ότι τα δεδομένα ακολουθούν κανονική κατανομή επομένως δεν χρειάζεται να κάνουμε πάλι έλεγχο.
+
+Στη συνέχεια, για τον έλεγχο της υπόθεσης στο SPSS, ομοίως με πριν, πηγαίνουμε στο μενού: \en{Analyze | Compare means | Independent samples T-test}. Το μόνου που αλλάζει είναι το \en{Grouping Variable} σε \en{yr(0 1)} και προκύπτει ο πίνακας \ref{table:sample_T_Test_2}. 
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_independent_Sample_T_Test_2.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Compare means | Independent samples T-test του SPSS}
+\label{table:sample_T_Test_2}
+\end{table}
+
+Από τον πίνακα \ref{table:sample_T_Test_2} παρατηρούμε ότι $p-value = 0.037 < 0.05$, συνεπώς (σε επίπεδο σημαντικότητας 5\%) απορρίπτουμε τη μηδενική υπόθεση, που σημαίνει ότι οι ιστοσελίδες που λειτουργούν τουλάχιστον 2 έτη, δεν έχουν τον ίδιο μέση ετήσιο αριθμό επισκέψεων με τις ιστοσελίδες που λειτουργούν λιγότερο από 2 έτη.
+
+
 \AssignmentTitle{ % 
 \begin{itemize}
-  \item Να εξετασθεί σε επίπεδο σημαντικότητας 5\% αν ο μέσος ετήσιος αριθμός επισκέψεων των ιστοσελίδων είναι στατιστικά ίσος μς 25000 ή όχι.
+  \item Να εξετασθεί σε επίπεδο σημαντικότητας 5\% αν ο μέσος ετήσιος αριθμός επισκέψεων των ιστοσελίδων είναι στατιστικά ίσος με 25000 ή όχι.
 \end{itemize}
 }
+
+Οι δύο υποθέσεις που έρχονται σε αντίθεση σύμφωνα με την εκφώνηση είναι οι ακόλουθες:
+
+\begin{equation}
+H_0 : \mu_A = \mu_0, H_1: \mu_A \neq \mu_0
+\end{equation}
+
+όπου $ \mu_0 = 25000$ και $ \mu_A $ είναι η άγνωστη επισκεψιμότητα των ιστοσελίδων αντίστοιχα. Από τα προηγούμενα ερωτήματα γνωρίζουμε ότι τα δεδομένα ακολουθούν κανονική κατανομή επομένως δεν χρειάζεται να κάνουμε πάλι έλεγχο.
+
+Στη συνέχεια για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Compare means | one sample T-Test} (βλ. σχήμα \ref{fig:one_sample_T_Test}) και προκύπτει ο πίνακας \ref{table:one_sample_T_Test}. 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_one_sample_T_test.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/one_sample_T_test.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze | Compare means | Independent samples T-test του SPSS}
+\label{fig:one_sample_T_Test}
+\end{figure}
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_one_sample_T_test.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Compare means | one sample T-Test του SPSS}
+\label{table:one_sample_T_Test}
+\end{table}
+
+Από τον πίνακα \ref{table:one_sample_T_Test} παρατηρούμε ότι $p-value= 0.082 > 0.05$. Συνεπώς (σε επίπεδο σημαντικότητας 5\%) δεν απορρίπτουμε τη μηδενική υπόθεση, γεγονός που σημαίνει ότι ο μέσος ετήσιος αριθμός επισκέψεων των ιστοσελίδων είναι στατιστικά ίσος με 25000.
 
 \AssignmentTitle{ % 
 \begin{itemize}
@@ -276,13 +460,47 @@
 \end{itemize}
 }
 
+
+Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $Η_0:$ η θεματολογία της ιστοσελίδας είναι ανεξάρτητη από τον παράγοντα \en{Country} και $H_1$ η θεματολογία της ιστοσελίδας εξαρτάται από τον παράγοντα \en{Country}.
+
+Για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Descriptive Statistics | Crosstabs} (βλ. σχήμα \ref{fig:crosstabs}) και προκύπτει ο πίνακας \ref{table:crosstabs_crosstabulation} και \ref{table:crosstabs_chi}. 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_crosstabs.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/crosstabs.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze | Compare means | Independent samples T-test του SPSS}
+\label{fig:crosstabs}
+\end{figure}
+
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_crosstabs_crosstabulation.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Descriptive Statistics | Crosstabs του SPSS (1)}
+\label{table:crosstabs_crosstabulation}
+\end{table}
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_crosstabs_chi.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Descriptive Statistics | Crosstabs του SPSS (2)}
+\label{table:crosstabs_chi}
+\end{table}
+
+Από τον πίνακα \ref{table:crosstabs_chi} παρατηρούμε ότι $p-value= 0.113 > 0.05$, συνεπώς (σε επίπεδο σημαντικότητας 5\%) δεν απορρίπτουμε την μηδενική υπόθεση, που σημαίνει ότι η θεματολογία της ιστοσελίδας είναι ανεξάρτητη από τον παράγοντα \en{Country}.
+
 \end{Assignment}
+
+\clearpage
 
 \begin{Assignment}[Μέρος Γ]
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Να εξετασθεί αν η μεταβλητή \en{views} ($Y$) εξαρτάται γραμμικά από τις μεταβλητές, \en{country, subject, news, journalist, yr}. Να βρεθεί το βέλτιστο γραμμικό μοντέλο (σε επίπεδο σημαντικότητας 1\%) και να δοθεί η γραμμική εξίσωση που αντιστοιχεί σε αυτό.
-ελληνικής με τα ίδια χαρακτηριστικά.
 \end{itemize}
 }
 
@@ -299,6 +517,8 @@
 }
 
 \end{Assignment}
+
+\clearpage
 
 \begin{Assignment}[Μέρος Δ]
 \AssignmentTitle{ % 
@@ -320,6 +540,8 @@
 }
 
 \end{Assignment}
+
+\clearpage
 
 \begin{Assignment}[Μέρος Ε]
 \AssignmentTitle{ % 
