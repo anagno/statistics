@@ -62,7 +62,7 @@
 \end{center}
 \end{table}
 
-Από το αρχικό αρχείο αφαιρέθηκε η 2 παρατήρηση με τιμές (0,1,12,1,22,35350)
+Από το αρχικό αρχείο αφαιρέθηκε η 2η παρατήρηση με τιμές (0,1,12,1,22,35350)
 
 
 \begin{Assignment}[Μέρος Α]
@@ -232,7 +232,7 @@
   \resizebox*{8.5cm}{!}{
     \includegraphics{images/menu_views_2_pie.png}
   }
-  \caption{ΤΤο μενού  \en{Graphs|Legacy Dialogs|Pie} του SPSS.}
+  \caption{Το μενού  \en{Graphs|Legacy Dialogs|Pie} του SPSS.}
 \label{fig:menu:views_2:pie}
 \end{figure}
 
@@ -460,7 +460,7 @@ H_0 : \mu_A = \mu_0, H_1: \mu_A \neq \mu_0
 \end{itemize}
 }
 
-Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $Η_0:$ η θεματολογία της ιστοσελίδας είναι ανεξάρτητη από τον παράγοντα \en{Country} και $H_1$ η θεματολογία της ιστοσελίδας εξαρτάται από τον παράγοντα \en{Country}.
+Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $H_0:$ η θεματολογία της ιστοσελίδας είναι ανεξάρτητη από τον παράγοντα \en{Country} και $H_1$ η θεματολογία της ιστοσελίδας εξαρτάται από τον παράγοντα \en{Country}.
 
 Για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze | Descriptive Statistics | Crosstabs} (βλ. σχήμα \ref{fig:crosstabs}) και προκύπτει ο πίνακας \ref{table:crosstabs_crosstabulation} και \ref{table:crosstabs_chi}. 
 
@@ -546,6 +546,14 @@ H_0:\beta = 0, H_1: \beta \neq 0
 \end{table}
 
 
+
+
+
+7)Να βρεθεί το βέλτιστο μοντέλο γραμμικής παληνδρόμησης με την μέθοδο Stepwise.
+
+Ομοίως με το 1: Analyze|Regression|Linear. Η διαφορά είναι ότι αλλάζουμε το method και βάζουμε Stepwise.
+
+
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Χρησιμοποιώντας το πλήρες μοντέλο, να εκτιμηθούν οι συντελεστές της γραμμική του εξίσωσης. Να δοθεί η ερμηνεία των αποτελεσμάτων. 
@@ -585,11 +593,83 @@ O πίνακας \ref{table:regression_linear} δείχνει το πλήρες 
 \end{itemize}
 }
 
+Για τον ορισμό της νέας μεταβλητής στο SPSS, όπως και πριν, πηγαίνουμε στο μενού: \en{Transform | Recode Into different Variables...} (βλ. σχήμα \ref{fig:journalists_2}).
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox*{8.5cm}{!}{
+    \includegraphics{images/journalist_2.png}
+  }
+  \caption{Το μενού  \en{Transform | Recode Into different Variables...} του SPSS.}
+\label{fig:journalists_2}
+\end{figure}
+
+Από την στιγμή που η εξαρτημένη μεταβλητή είναι μία και ποσοτική, ενώ οι εξαρτημένες μεταβλητές είναι ποιοτικές, θα πραγματοποιηθεί ανάλυση διακύμανσης.
+
+Κατ` ουσία είναι έλεγχος σημαντικότητας και ισοδυναμεί με τον ακόλουθο στατιστικό έλεγχο:
+
+\begin{equation}
+H_0:\beta = 0, H_1: \beta \neq 0
+\end{equation}
+
+Οι δύο υποθέσεις που έρχονται σε αντιπαράθεση σύμφωνα με την εκφώνηση είναι οι: $H_0$ και $H_1$ όπου η $H_0:$ η εξαρτημένη μεταβλητή είναι ανεξάρτητη από τον παράγοντα και $H_1$ η εξαρτημένη μεταβλητή είναι εξαρτημένη από τον παράγοντα, άρα και ο παράγοντας είναι σημαντικός.
+
+Για τον έλεγχο της υπόθεσης στο SPSS πηγαίνουμε στο μενού: \en{Analyze|General Linear Model| Univariate} (βλ. σχήμα \ref{fig:univariate}) και προκύπτει ο πίνακας \ref{table:univariate}. 
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_univariate.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/univariate.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze|General Linear Model| Univariate}
+\label{fig:univariate}
+\end{figure}
+
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_univariate.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze|General Linear Model| Univariate του SPSS }
+\label{table:univariate}
+\end{table}
+
+Αν το $p-value<0.05$ τότε αποδεχόμαστε την $H_1$, δηλαδή αποδεχόμαστε ότι ο παράγοντας είναι σημαντικός.Αν το $p-value>0.05$ τότε αποδεχόμαστε την $H_0$. Επομένως από τον πίνακα \ref{table:univariate} προκύπτει ότι (σε επίπεδο σημαντικότητας 95\%) η καινούργια μεταβλητή \en{journalists\_2} είναι σημαντικός παράγοντας ενώ η χώρα δεν είναι σημαντικός παράγοντας, επομένως και η αλληλεπίδραση μεταξύ τους δεν είναι σημαντική στατιστική. Συνεπώς το τελικό μοντέλο είναι το ακόλουθο:
+
+\begin{equation}
+Y = \mu + \alpha_i + \beta_j + \varepsilon_{ijk} 
+\end{equation}
+
+
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Χρησιμοποιώντας την τελική μορφή του μοντέλου που καταλήξατε στο ερώτημα (1), να δοθούν οι σημειακές εκτιμήσεις και τα διαστήματα εμπιστοσύνης 95\% για τους μέσους ετήσιους αριθμούς επισκέψεων των ιστοσελίδων για κάθε μία από τις ομάδες που έχουν σχηματισθεί βάσει της μεταβλητής \en{journalists\_2}. Σχολιάστε και τα αποτελέσματα.
 \end{itemize}
 }
+
+Για την εύρεση των σημειακών εκτιμήσεων για τους μέσους ετήσιους αριθμούς επισκέψεων στο SPSS, όπως και πριν, πηγαίνουμε στο μενού: \en{Analyze|General Linear Model| Univariate}. Μόνο που στην επιλογή Options τώρα μεταφέρουμε τον παράγοντα journalists\_2 στο Display Means for (βλ. σχήμα \ref{fig:journalists_2_mean}).
+
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox*{8.5cm}{!}{
+    \includegraphics{images/journalists_2_mean.png}
+  }
+  \caption{Το μενού \en{Analyze|General Linear Model| Univariate} του SPSS (2).}
+\label{fig:journalists_2_mean}
+\end{figure}
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_journalists_2_mean.png}
+\caption{Ο πίνακας που προκύπτει από το μενού \en{Analyze|General Linear Model| Univariate} του SPSS (2) }
+\label{table:journalists_2_mean}
+\end{table}
+
+
+Στον πίνακα \ref{table:journalists_2_mean} εμφανίζονται οι μέσοι όροι για κάθε παράγοντα της εξαρτημένης μεταβλητής. Αυτό που παρατηρούμε είναι ότι στην 2 και 3 ομάδα (δηλαδή όσες ιστοσελίδες έχουν μεταξύ 8 έως 20 δημοσιογράφους και όσες ιστοσελίδες έχουν πάνω από 20 δημοσιογράφους) υπάρχει επικάλυψη. Οπότε στατιστικά δεν είναι σίγουρο ότι ο αριθμός των δημοσιογράφων αυξάνει και τον αριθμό της επισκεψιμότητας.
+
 
 \end{Assignment}
 
@@ -602,11 +682,64 @@ O πίνακας \ref{table:regression_linear} δείχνει το πλήρες 
 \end{itemize}
 }
 
+Η εξαρτημένη μεταβλητή (\en{yr}) είναι ποιοτική μεταβλητή με 2 επίπεδα. Επομένως ως μέθοδο θα χρησιμοποιήσουμε την λογιστική παλινδρόμηση. Αρχικά θα εφαρμοστεί έλεγχος καλής προσαρμογής του μοντέλου της Λογιστικής Παλινδρόμησης με εξαρτημένη τη μεταβλητή \en{Yr} και ανεξάρτητες όλες τις υπόλοιπες μεταβλητές. Ο έλεγχος \en{Hosmer \& Lemeshow test} πραγματοποιείται έτσι ώστε να επιβεβαιωθεί ότι το σύνολο των παραγόντων  που έχουν καταγραφεί ως υποψήφιοι να επιδρούν πάνω στο τελικό αποτέλεσμα, έχουν καλή προσαρμογή στα δεδομένα του προβλήματος.
+
+Για τον υπολογισμό της λογιστικής παλινδρόμησης καθώς και του ελέγχου της στο SPSS, πηγαίνουμε στο μενού: \en{Analyze | Regresion | Binary Logistic} (βλ. σχήμα \ref{fig:binary}) και τα αποτελέσματα που μας ενδιαφέρουν φαίνονται στον πίνακα \ref{table:binary_hosmer} και \ref{table:binary}.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.5\textwidth}
+     \includegraphics[width=\textwidth,height=0.25\textheight]{images/menu_binary.png}
+  \end{subfigure}%
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+  \begin{subfigure}[b]{0.5\textwidth}
+    \includegraphics[width=\textwidth,height=0.25\textheight]{images/binary.png}
+  \end{subfigure}
+  \caption{Το μενού Analyze | Regresion | Binary Logistic}
+\label{fig:binary}
+\end{figure}
+
+
+\begin{table}[htbp]
+\centering
+\includegraphics[width=0.5\textwidth]{images/table_binary_hosmer.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Regresion | Binary Logistic του SPSS }
+\label{table:binary_hosmer}
+\end{table}
+
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_binary.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Regresion | Binary Logistic του SPSS(2) }
+\label{table:binary}
+\end{table}
+
+Η τιμή (από τον πίνακα \ref{table:binary_hosmer}) $p-value = 0.078 > 0.10$, συνεπώς σε επίπεδο σημαντικότητας 10\%, δεν απορρίπτουμε την μηδενική υπόθεση της καλής προσαρμογής, που σημαίνει ότι το μοντέλο που εφαρμόσαμε παρουσιάζει συνολικά καλή προσαρμογή στα δεδομένα.
+
+Στον πίνακα \ref{table:binary} φαίνεται πιο παράγοντες επηρεάζουν σε σημαντικό βαθμό την εξαρτημένη μεταβλητή. Οι παράγοντες των οποίων η τιμή $p-value$ είναι μεγαλύτερη από το επίπεδο σημαντικότητας 10\% δεν επηρεάζουν σε σημαντικό βαθμό την εξαρτημένη μεταβλητή. Δηλαδή η μόνη σημαντική μεταβλητή είναι ο αριθμός των δημοσιογράφων.  Συνεπώς, το βέλτιστο μοντέλο Λογιστικής Παλινδρόμησης για την πρόβλεψη της μεταβλητής θα περιλαμβάνει μόνο τον αριθμό των δημοσιογράφων. Προκειμένου να κατασκευάσουμε την κατάλληλη εξίσωση του παραπάνω μοντέλου, εφαρμόζουμε την ίδια διαδικασία με πιο πάνω (Analyze | Regresion | Binary Logistic) επιλέγοντας αυτή την φορά ως \en{Covariates} μόνο τον αριθμό των δημοσιογράφων και επομένως προκύπτει ο πίνακας \ref{table:binary_2}.
+
+\begin{table}[htbp]
+\includegraphics[width=\textwidth]{images/table_binary_2.png}
+\caption{Ο πίνακας που προκύπτει από το μενού Analyze | Regresion | Binary Logistic του SPSS(2) }
+\label{table:binary_2}
+\end{table}
+
+Το βέλτιστο μοντέλο Λογιστικής Παλινδρόμης για την αντιμετώπιση του παρόντος προβλήματος δίνεται ως ακολούθως:
+
+\begin{equation}
+ln(\frac{p}{1-p}) = 2.620 -0.109 \cdot X_{journalists}
+\end{equation}
+
+όπου $p$ είναι η πιθανότητα του να είναι παλαιά η ιστοσελίδα (δηλαδή εκφράζει την πιθανότητα η μεταβλητή να λάβει την τιμή 1).
+
 \AssignmentTitle{ % 
 \begin{itemize}
   \item Χρησιμοποιώντας το βέλτιστο μοντέλο, να προβλεφθεί η παλαιότητα μίας ελληνικής ιστοσελίδας για την οποία γνωρίζουμε ότι απασχολεί 12 δημοσιογράφους, πραγματεύεται θέματα αθλητικής επικαιρότητας και στην οποία αναρτώνται ημερησίως 15 νέα άρθρα.
 \end{itemize}
 }
+
+Δεδομένου ότι οι παράγοντες \en{subject, news} δεν είναι στατιστικά σημαντικοί για το αν η σελίδα είναι παλαιά, οι πληροφορίες της εκφώνησης που αφορούν τους συγκεκριμένους παράγοντες δεν θα ληφθούν υπόιν για την απάντηση του ερωτήματος. Προκειμένου να γίνει η ζητούμενη πρόβλεψη, αρκεί να αντικατασταθεί ο παράγοντας \en{journalists} με τις τιμές που δίνει η εκφώνηση. Άρα:
+$ln(\frac{p}{1-p}) = 1.312 \implies p = 0.787$ που σημαίνει ότι υπάρχει 78,7\% πιθανότητα να λειτουργεί λιγότερο από 2 έτη.
 
 \end{Assignment}
 
